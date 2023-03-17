@@ -3,7 +3,13 @@ function Get-UserFiles {
         Get-ChildItem "$env:userprofile"
     }
     else {
-        Get-ChildItem "C:\users\hallo"
+        $user = Read-Host "Enter your Username"
+        try {
+            Get-ChildItem "C:\users\$user"
+        }
+        catch {
+            Write-Host -ForegroundColor Red "!Fehler!"
+        }
     }
 }
 Get-UserFiles
