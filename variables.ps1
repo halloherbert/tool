@@ -1,0 +1,3 @@
+$global:menupoints = @(
+    "$backups"
+)
