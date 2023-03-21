@@ -3,4 +3,5 @@
 
 Get-ChildItem | Unblock-File | Out-Null
 Set-PSDebug -Off
+
 Show-Menu
